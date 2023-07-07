@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5406adeb-3e48-47c9-b5ee-f35bc6f7f5ee" name="Changes" comment="try to pass">
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="5406adeb-3e48-47c9-b5ee-f35bc6f7f5ee" name="Changes" comment="try to pass" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -128,7 +126,7 @@
       <option name="presentableId" value="Default" />
       <updated>1688368189392</updated>
       <workItem from="1688389486619" duration="1114000" />
-      <workItem from="1688645756033" duration="26524000" />
+      <workItem from="1688645756033" duration="26843000" />
     </task>
     <task id="LOCAL-00001" summary="try to pass">
       <option name="closed" value="true" />
@@ -154,7 +152,15 @@
       <option name="project" value="LOCAL" />
       <updated>1688717477668</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="try to pass">
+      <option name="closed" value="true" />
+      <created>1688718352427</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1688718352427</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
