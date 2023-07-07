@@ -10,12 +10,12 @@ public class Util extends User {
         util.getConnection();
     }
 
-    String url = "jdbc:mysql://localhost:3306/mydbtest";
-    String username = "root";
-    String password = "Roman22091995";
+    static String url = "jdbc:mysql://localhost:3306/mydbtest";
+    static String username = "root";
+    static String password = "Roman22091995";
 
 
-    public Connection getConnection() {
+    public static Connection getConnection() {
         Connection connection = null;
 
         try {
@@ -23,8 +23,6 @@ public class Util extends User {
             Statement statement = connection.createStatement();
             Class.forName("com.mysql.cj.jdbc.Driver");
             System.out.println("Connection completed!");
-            connection.setAutoCommit(false);
-            connection.commit();
         } catch (ClassNotFoundException | SQLException e) {
             throw new RuntimeException(e);
         } finally {

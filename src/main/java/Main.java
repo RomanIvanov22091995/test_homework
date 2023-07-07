@@ -1,10 +1,11 @@
+import service.UserService;
 import service.UserServiceImpl;
 
 import java.sql.SQLException;
 
 public class Main {
     public static void main(String[] args) throws SQLException {
-        UserServiceImpl userService = new UserServiceImpl();
+         UserService userService = new UserServiceImpl();
         userService.createUsersTable();
         userService.saveUser("Dmitriy", "Svechkolan", (byte) 28); // add sout with task in method
         userService.saveUser("Sergey", "Faevskiy", (byte) 27);

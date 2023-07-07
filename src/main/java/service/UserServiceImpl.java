@@ -19,7 +19,6 @@ public class UserServiceImpl implements UserService {
     }
 
     public void saveUser(String name, String lastName, byte age) throws SQLException {
-
         userDao.saveUser(name, lastName, age);
         System.out.println("User с именем – " + name + " добавлен в базу данных");
     }
@@ -30,10 +29,11 @@ public class UserServiceImpl implements UserService {
 
 
     public List<User> getAllUsers() throws SQLException {
-        for (User allUser : userDao.getAllUsers()) {
+        List<User> users =  userDao.getAllUsers();
+        for (User allUser : users) {
             System.out.println(allUser);
         }
-        return userDao.getAllUsers();
+        return users;
 
     }
 
