@@ -1,20 +1,27 @@
+import dao.UserDao;
+import dao.UserDaoJDBCImpl;
 import service.UserService;
 import service.UserServiceImpl;
+import util.Util;
 
 import java.sql.SQLException;
 
 public class Main {
     public static void main(String[] args) throws SQLException {
-         UserService userService = new UserServiceImpl();
-        userService.createUsersTable();
-        userService.saveUser("Dmitriy", "Svechkolan", (byte) 28); // add sout with task in method
-        userService.saveUser("Sergey", "Faevskiy", (byte) 27);
-        userService.saveUser("Irina", "Faevskiy", (byte) 29);
-        userService.saveUser("Julia", "Gnezdilova", (byte) 28);
-        userService.removeUserById(2);
-        userService.getAllUsers();
-        userService.cleanUsersTable();
-        userService.dropUsersTable();
+        Util.getConnection();
+        UserDao userDao = new UserDaoJDBCImpl();
+
+        userDao.createUsersTable();
+
+        userDao.saveUser("Name1", "LastName1", (byte) 20);
+        userDao.saveUser("Name2", "LastName2", (byte) 25);
+        userDao.saveUser("Name3", "LastName3", (byte) 31);
+        userDao.saveUser("Name4", "LastName4", (byte) 38);
+
+        userDao.removeUserById(1);
+        userDao.getAllUsers();
+        userDao.cleanUsersTable();
+        userDao.dropUsersTable();
 
     }
 }
